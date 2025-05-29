@@ -1,0 +1,19 @@
+//version 1 with an if loop
+
+let year = 2400
+
+if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+  console.log("The year", year, "is a leap year!")
+} else{
+  console.log("The year", year, "is not a leap year!")
+}
+
+//version 2 with a for loop
+
+for(let year = 2000; year <= 3000; year++){
+  if (year % 4 == 0 && year % 100 != 0 || year % 400 ==0){
+    console.log("The following year is a leap year:", year)
+  } else if (year == 2100){
+    break;
+  }
+}
