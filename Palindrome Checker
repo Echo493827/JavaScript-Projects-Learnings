@@ -1,0 +1,14 @@
+function isPalindrome(word){
+  let reverseWord = ""
+  let finalWord = word.toLowerCase();
+  for (let i = finalWord.length - 1; i >= 0; i--){
+    reverseWord += finalWord[i];
+  }
+  if (reverseWord == finalWord){
+    return (true);
+  } else{
+    return (false);
+  }
+}
+
+console.log(isPalindrome("aviary"))
